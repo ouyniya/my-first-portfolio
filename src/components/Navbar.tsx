@@ -33,10 +33,12 @@ export const Navbar = () => {
 
       {/* logo */}
       <div>
-        <p className="font-serif text-2xl">
-          <span className="text-orange-300">Nys</span>
-          Dev
-        </p>
+        <a href="#">
+          <p className="font-semibold text-2xl">
+            <span className="text-orange-300">Nys</span>
+            <span>Dev</span>
+          </p>
+        </a>
       </div>
     </div>
   );

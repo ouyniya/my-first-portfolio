@@ -26,8 +26,8 @@
 }
 
 @layer base {
-  .navbar-menu {
-    @apply transform duration-300;
+  .hero-ring {
+    @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full border-orange-400/2 shadow-[0_0_80px_inset] shadow-orange-400/8;
   }
 }
 

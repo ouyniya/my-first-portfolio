@@ -5,6 +5,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCrown } from "@fortawesome/free-solid-svg-icons";
+import Tooltip from "./Tooltip";
 
 const socialMedia = [
   {
@@ -55,9 +56,11 @@ export const Footer = () => {
                 <div className="flex gap-1">
                   {socialMedia.map((item, idx) => (
                     <a href={item.href} key={idx}>
-                      <button className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-primary hover:cursor-grab active:cursor-grabbing">
-                        <FontAwesomeIcon icon={item.icon} size="lg" />
-                      </button>
+                      <Tooltip text={item.title}>
+                        <button className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-950 border border-primary hover:border hover:border-orange-500/10 hover:cursor-grab active:cursor-grabbing hover:text-orange-300 transition-all duration-500">
+                          <FontAwesomeIcon icon={item.icon} size="lg" />
+                        </button>
+                      </Tooltip>
                     </a>
                   ))}
                 </div>
@@ -74,7 +77,7 @@ export const Footer = () => {
       </div>
 
       {/* text move to left section */}
-      <div className="container flex justify-between pb-2">
+      <div className="flex justify-between pb-2">
         <div className="flex flex-none gap-4 pr-4 animate-move [animation-duration:15s]">
           <p className="text-9xl opacity-85">
             <span className="font-medium bg-gradient-to-b from-orange-200 via-orange-100 to-white text-transparent bg-clip-text">
