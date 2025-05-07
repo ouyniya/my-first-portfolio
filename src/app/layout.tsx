@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 const inter = Inter({
   variable: "--font-sans",
@@ -55,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${calistoga.variable} antialiased bg-[#1f1e1e] text-[#f6efe8]`}
+        className={`${inter.variable} ${calistoga.variable} antialiased bg-primary text-secondary`}
       >
         {children}
       </body>

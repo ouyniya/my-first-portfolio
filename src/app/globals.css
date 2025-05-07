@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Calistoga", "sans-serif"; 
+  --color-primary: #1f1e1e;
+  --color-secondary: #f6efe8;
+  --font-display: "Calistoga", "sans-serif";
   --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --animate-move: move 1s linear infinite;
   @keyframes wiggle {
     0%,
     100% {
@@ -10,6 +13,14 @@
     }
     50% {
       transform: rotate(3deg);
+    }
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
     }
   }
 }
@@ -22,6 +33,6 @@
 
 @layer utilities {
   .container {
-    @apply lg:max-w-5xl
+    @apply lg:max-w-5xl m-auto;
   }
 }
