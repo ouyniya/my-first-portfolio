@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "Next.js",
     "UX/UI",
   ],
+  icons: {
+    icon: '/icon.svg',
+  },
   openGraph: {
     // This helps improve link previews when shared on social media.
     title: "NYS's Portfolio",
