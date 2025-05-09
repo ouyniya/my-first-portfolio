@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "UX/UI",
   ],
   icons: {
-    icon: '/icon.svg',
+    icon: '/favicon.svg',
   },
   openGraph: {
     // This helps improve link previews when shared on social media.

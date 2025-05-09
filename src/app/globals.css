@@ -6,6 +6,9 @@
   --font-display: "Calistoga", "sans-serif";
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   --animate-move: move 1s linear infinite;
+  --animate-move-left: move-left 1s linear infinite;
+  --animate-move-right: move-right 1s linear infinite;
+  --animate-animate: animate 1s ease-in-out infinite;
   @keyframes wiggle {
     0%,
     100% {
@@ -23,16 +26,87 @@
       transform: translateX(-50%);
     }
   }
+  @keyframes move-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes move-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes animate {
+    0% {
+      /* transform: translateY(0) scale(1); */
+      opacity: 1;
+    }
+    75% {
+      /* transform: translateY(200px) scale(0.5); */
+      opacity: 0;
+    }
+}
 }
 
 @layer base {
   .hero-ring {
-    @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full border-orange-400/2 shadow-[0_0_80px_inset] shadow-orange-400/8;
+    @apply absolute inset-0 border top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full border-orange-400/15 shadow-[0_0_80px_inset] shadow-orange-400/8;
+  }
+
+  .hero-ring-strong {
+    @apply absolute inset-0 border bg-orange-400/5 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full border-orange-400/15 shadow-[0_0_80px_inset] shadow-orange-400/8;
+  }
+
+  .hero-ring-stronger {
+    @apply absolute inset-0 border bg-orange-400/5 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full border-orange-400/15 shadow-[0_0_80px_inset] shadow-orange-400/8;
+  }
+
+  .hero-ring-strongest {
+    @apply absolute inset-0 border bg-orange-400/10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full border-orange-400/15 shadow-[0_0_80px_inset] shadow-orange-400/8;
   }
 }
 
 @layer utilities {
   .container {
     @apply lg:max-w-5xl m-auto;
+  }
+
+  .wrapper-container {
+    width: 100vw;
+    height: 750px;
+    position: absolute;
+    background-color: none;
+    z-index: -20;
+  }
+
+  .wrapper {
+    position: relative fixed;
+  }
+
+  .wrapper span {
+    position: absolute;
+    animation: animate 2s linear infinite;
+  }
+
+  .cute-cursor {
+    cursor: url("../assets/cursors/cursor.cur"), auto;
+  }
+
+  .nav {
+    @apply relative tracking-tight;
+  }
+
+  .nav::after {
+    @apply absolute content-[''] bg-orange-300 h-0.5 w-[0%] left-0 -bottom-[5px] rounded-2xl duration-300;
+  }
+
+  .nav:hover::after {
+    @apply w-[100%];
   }
 }
