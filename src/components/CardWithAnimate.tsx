@@ -1,3 +1,4 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import {
   faCircleDot,
   faComment,
@@ -43,7 +44,7 @@ const CardWithAnimate = () => {
 interface CardType {
   title: string;
   subtitle: string;
-  Icon: IconType;
+  Icon: IconProp;
   href: string;
 }
 

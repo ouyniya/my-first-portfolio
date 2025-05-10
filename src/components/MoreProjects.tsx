@@ -27,7 +27,7 @@ const imageList = [
   {
     id: 5,
     src: "/p-port.png",
-    link: "https://github.com/ouyniya/nextjs-portfolio-website"
+    link: "https://github.com/ouyniya/my-first-portfolio"
 
   },
   {
