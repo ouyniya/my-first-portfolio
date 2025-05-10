@@ -11,12 +11,12 @@ function More() {
           title="Project Playground"
           description="A bunch of mini projects"
         />
-        <div className="flex justify-center py-6 pb-12">
+        <div className="flex justify-center py-4 md:py-6 pb-12">
 
         <Button>See more on GitHub</Button>
 
         </div>
-        <div className="mt-10">
+        <div className="mt-0 md:mt-10">
           <MoreProjects />
         </div>
       </div>

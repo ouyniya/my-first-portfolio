@@ -22,7 +22,7 @@ type ToggleProps = {
 
 export const Navbar: React.FC<ToggleProps> = ({ isChecked, setIsChecked }) => {
   return (
-    <div className="container flex items-center justify-between w-full z-50">
+    <div className="container flex items-center justify-between w-full z-50 px-2 lg:px-0">
       {/* logo */}
       <div className="basis-1/3 w-full flex items-center">
         <a href="#">
@@ -34,7 +34,7 @@ export const Navbar: React.FC<ToggleProps> = ({ isChecked, setIsChecked }) => {
       </div>
 
       {/* Menu */}
-      <div className="basis-1/3 w-full flex items-center justify-center">
+      <div className="basis-1/3 w-full md:flex items-center justify-center invisible md:visible">
         <ul className="flex gap-4 text-xl h-16 items-center z-50">
           {MENU.map((item, index) => (
             <li key={index}>
@@ -42,7 +42,7 @@ export const Navbar: React.FC<ToggleProps> = ({ isChecked, setIsChecked }) => {
                 <div className="nav">
                   <a
                     href={item.href}
-                    className="hover:text-orange-300 transition-all duration-500 text-[16px]"
+                    className="hover:text-orange-300 transition-all duration-500 text-sm lg:text-[16px]"
                   >
                     {item.title}{" "}
                   </a>

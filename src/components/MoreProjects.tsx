@@ -126,7 +126,7 @@ const ImageGrid = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[700px] gap-1">
+    <div className="grid grid-cols-4 grid-rows-4 h-[500px] md:h-[700px] gap-1">
       {shuffledImages.map((img) => (
         <a href={img.link} key={img.id}>
       <motion.div
@@ -144,7 +144,9 @@ const ImageGrid = () => {
 
         {/* Text on hover */}
         <span className="absolute inset-0 flex items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:cursor-pointer">
-        👉 See on GitHub
+        <div className="flex justify-center items-center w-full text-xs md:text-base">
+        👉 GitHub
+        </div>
         </span>
       </motion.div>
     </a>
