@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import type { IconProp, SizeProp } from "@fortawesome/fontawesome-svg-core";
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { Fragment } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -10,7 +10,6 @@ export const ToolboxItems = ({
 }: {
   items: {
     title: string;
-    size: SizeProp | string;
     iconType: IconProp;
   }[];
   className?: string;
@@ -40,7 +39,7 @@ export const ToolboxItems = ({
                   key={index}
                   className="inline-flex gap-2 items-center py-2 px-3 outline outline-white/10 rounded-lg"
                 >
-                  <FontAwesomeIcon icon={item.iconType} size={item.size} />
+                  <FontAwesomeIcon icon={item.iconType} className="size-md" />
                   <span className="font-semibold">{item.title}</span>
                 </div>
               ))}

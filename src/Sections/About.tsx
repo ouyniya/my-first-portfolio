@@ -28,16 +28,16 @@ import CardWithAnimate from "@/components/CardWithAnimate";
 // ===================== Constants =====================
 
 const TOOLBOX_ITEMS = [
-  { title: "JavaScript", iconType: faJs, size: "md" },
-  { title: "CSS3", iconType: faCss3, size: "md" },
-  { title: "React", iconType: faReact, size: "md" },
-  { title: "GitHub", iconType: faGithub, size: "md" },
-  { title: "NodeJS", iconType: faNodeJs, size: "md" },
-  { title: "Angular", iconType: faAngular, size: "md" },
-  { title: "Prisma", iconType: faDatabase, size: "md" },
-  { title: "MySQL", iconType: faDatabase, size: "md" },
-  { title: "MongoDB", iconType: faDatabase, size: "md" },
-  { title: "TypeScript", iconType: faJs, size: "md" },
+  { title: "JavaScript", iconType: faJs},
+  { title: "CSS3", iconType: faCss3 },
+  { title: "React", iconType: faReact},
+  { title: "GitHub", iconType: faGithub },
+  { title: "NodeJS", iconType: faNodeJs },
+  { title: "Angular", iconType: faAngular },
+  { title: "Prisma", iconType: faDatabase },
+  { title: "MySQL", iconType: faDatabase},
+  { title: "MongoDB", iconType: faDatabase },
+  { title: "TypeScript", iconType: faJs },
 ];
 
 const HOBBIES = [

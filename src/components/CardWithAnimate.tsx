@@ -58,8 +58,7 @@ const Card = ({ title, subtitle, Icon, href }: CardType) => {
 
       <FontAwesomeIcon
         icon={Icon}
-        size="md"
-        className="absolute z-10 -top-19 -right-11 text-9xl text-orange-100/2 ge- group-hover:text-orange-900/50 group-hover:rotate-12 transition-transform duration-300"
+        className="size-md absolute z-10 -top-19 -right-11 text-9xl text-orange-100/2 ge- group-hover:text-orange-900/50 group-hover:rotate-12 transition-transform duration-300"
       />
 
       <h3 className="font-medium text-lg mb-2 text-orange-300 group-hover:text-orange-950 relative z-10 duration-300">
