@@ -57,7 +57,7 @@ export const Typewriter: React.FC<TypewriterProps> = ({ text, repeatDelay = 2000
       initial="hidden"
       animate="visible"
       style={{ display: "inline-block" }}
-      className="tracking-wider"
+      className=""
     >
       {text.split("").map((char, index) => (
         <motion.span key={index} variants={letterVariants}>

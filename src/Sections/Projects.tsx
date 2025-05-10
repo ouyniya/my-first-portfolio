@@ -169,8 +169,8 @@ export const ProjectsSection = () => {
                 </div>
 
                 {/* mock up */}
-                <div className="relative min-h-[330px]">
-                  <BrowserMockup className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none">
+                <div className="relative min-h-[350px]">
+                  <BrowserMockup className="-mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none">
                     <Image src={project.image} alt={project.title} />
                   </BrowserMockup>
 
@@ -191,8 +191,8 @@ export const ProjectsSection = () => {
                 </div>
               </div>
 
+              {/* tech stack */}
               <div className="flex flex-col mt-5 md:mt-8 lg:mt-2 mb-8 lg:mb-16">
-                {/* tech stack */}
                 <div className="flex gap-2 flex-wrap opacity-75">
                   {project.stacks.map((stack, index) => (
                     <p

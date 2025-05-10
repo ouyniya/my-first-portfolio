@@ -62,10 +62,11 @@ const HeroDecor = () => (
 );
 
 const HeroText = () => (
-  <div className="container flex flex-col items-center">
+  <div className="container flex flex-col items-center cute-cursor">
     <Image src={profileImage} alt="My profile" className="w-[120px] pt-20" />
     <div className="bg-gray-950 border border-orange-500/25 px-2 py-1 rounded-xl text-xs h-7 w-31 flex items-center justify-center gap-2">
-      <Typewriter text="👋 Hello, world!" />
+      👋
+      <Typewriter text="Hello, world!" />
     </div>
 
     <div className="max-w-lg mx-auto flax flex-col">

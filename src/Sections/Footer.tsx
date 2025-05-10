@@ -33,11 +33,11 @@ const socialMedia = [
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="relative overflow-x-clip flex flex-col gap-12 mt-24 md:mt-32">
+    <footer id="contact" className="relative overflow-x-clip flex flex-col gap-12 mt-24 md:mt-32 cute-cursor">
       {/* social section */}
       <div>
         <div
-          className="absolute h-[400px] w-screen bottom-0 left-1/2 -translate-x-1/2 bg-orange-300/25 -z-10"
+          className="absolute h-[400px] w-screen bottom-0 left-1/2 -translate-x-1/2 bg-orange-300/10 -z-10"
           style={{
             maskImage:
               "radial-gradient(50% 50% at bottom center, black, transparent)",
@@ -46,9 +46,16 @@ export const Footer = () => {
           }}
         ></div>
         <div className="container">
-          <div className="w-full flex flex-col lg:flex-row justify-between items-center">
+          <div className="w-full flex flex-col lg:flex-row justify-between items-center select-none">
             <div className="text-2xl md:text-4xl lg:text-5xl flex lg:flex-col mb-18 md:mb-8 lg:mb-0">
-              <p className="font-semibold uppercase">Thanks for</p>
+              <p className="font-semibold uppercase">
+                
+                <span className="text-orange-300">
+                  
+                  Thanks {" "}
+                  </span>
+                  
+                  for</p>
               <p className="font-semibold uppercase">visiting Me!</p>
             </div>
             <div className="flex flex-col items-center md:flex-row gap-4 md:gap-16">
@@ -58,7 +65,7 @@ export const Footer = () => {
                   {socialMedia.map((item, idx) => (
                     <a href={item.href} key={idx}>
                       <Tooltip text={item.title}>
-                        <button className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-950 border border-primary hover:border hover:border-orange-500/10 hover:cursor-grab active:cursor-grabbing hover:text-orange-300 transition-all duration-500">
+                        <button className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-950 border border-primary/0 hover:border hover:border-orange-500/10 hover:cursor-grab active:cursor-grabbing hover:text-orange-300 transition-all duration-500">
                           <FontAwesomeIcon icon={item.icon} size="lg" />
                         </button>
                       </Tooltip>
@@ -76,7 +83,7 @@ export const Footer = () => {
       </div>
 
       {/* text move to left section */}
-      <div className="flex justify-between pb-2 cute-cursor select-none">
+      {/* <div className="flex justify-between pb-2 cute-cursor select-none">
         <div className="flex flex-none gap-4 pr-8 animate-move [animation-duration:15s]">
           <p className="text-5xl md:text-7xl lg:text-9xl opacity-85">
             <span className="font-medium bg-gradient-to-b from-orange-200 via-orange-100 to-white text-transparent bg-clip-text">
@@ -95,7 +102,7 @@ export const Footer = () => {
             </span>
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* copyright section */}
       <div className="container flex flex-col md:flex-row items-center md:justify-between pb-2">

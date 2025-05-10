@@ -10,6 +10,8 @@ import { motion, useScroll } from "framer-motion";
 import { StarBg } from "@/components/StarBg";
 import { useState } from "react";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
+import FAQ from "@/Sections/FAQ";
+import More from "@/Sections/More";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -38,7 +40,9 @@ export default function Home() {
       <Hero />
       <TapeToRight />
       <ProjectsSection />
+      <More/>
       <AboutSection />
+      <FAQ />
       <Footer />
     </>
   );

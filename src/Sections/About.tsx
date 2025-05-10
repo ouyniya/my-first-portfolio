@@ -107,7 +107,7 @@ export const AboutSection = () => {
         <div className="mt-20 flex flex-col gap-8">
           {/* Toolbox & Reads */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-            <Card className="p-6 h-[320px] md:col-span-2
+            <Card className="p-6 h-[320px] md:col-span-2 cute-cursor
             bg-radial-[at_100%_0%] from-[#844e29] via-primary via-25% to-primary to-90%
             ">
               <CardHeader
@@ -140,7 +140,7 @@ export const AboutSection = () => {
             ">
               <CardHeader
                 title="Achievements"
-                description="Built projects, solved problems, and occasionally broke things—because that’s how we learn!"
+                description="A few highlights I’m proud of—milestones, certifications, and moments when the hard work paid off."
               />
               <div className="w-full mx-auto mt-8">
               <CardWithAnimate />
