@@ -169,7 +169,7 @@ export const ProjectsSection = () => {
                 </div>
 
                 {/* mock up */}
-                <div className="relative min-h-[350px]">
+                <div className="relative md:min-h-[350px]">
                   <BrowserMockup className="-mb-4 md:-mb-0 mt-5 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none">
                     <Image src={project.image} alt={project.title} />
                   </BrowserMockup>

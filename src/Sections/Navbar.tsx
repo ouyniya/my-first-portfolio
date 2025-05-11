@@ -26,7 +26,7 @@ export const Navbar: React.FC<ToggleProps> = ({ isChecked, setIsChecked }) => {
       {/* logo */}
       <div className="basis-1/3 w-full flex items-center">
         <a href="#">
-          <p className="font-serif text-xl">
+          <p className="font-serif md:text-xl md:visible invisible">
             <span className="text-orange-300">{`<Nys`}</span>
             <span>{`Dev />`}</span>
           </p>
@@ -58,7 +58,7 @@ export const Navbar: React.FC<ToggleProps> = ({ isChecked, setIsChecked }) => {
       </div>
 
       {/* Toggle */}
-      <div className="basis-1/3 w-full flex items-center justify-end">
+      <div className="basis-1/3 w-full flex items-center justify-end md:visible invisible">
         <Toggle isChecked={isChecked} setIsChecked={setIsChecked} />
       </div>
     </div>

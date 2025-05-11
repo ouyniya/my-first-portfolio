@@ -12,9 +12,9 @@ function More() {
           description="A bunch of mini projects"
         />
         <div className="flex justify-center py-4 md:py-6 pb-12">
-
-        <Button>See more on GitHub</Button>
-
+          <a href="https://github.com/ouyniya/">
+            <Button>See more on GitHub</Button>
+          </a>
         </div>
         <div className="mt-0 md:mt-10">
           <MoreProjects />
