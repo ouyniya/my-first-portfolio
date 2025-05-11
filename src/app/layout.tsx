@@ -4,6 +4,7 @@ import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   variable: "--font-sans",
@@ -64,6 +65,7 @@ export default function RootLayout({
         className={`${inter.variable} ${calistoga.variable} antialiased bg-primary text-secondary`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
