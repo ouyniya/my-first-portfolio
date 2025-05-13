@@ -1,5 +1,5 @@
 import project1 from "@/assets/images/project-1.jpg";
-import project2 from "@/assets/images/project-2.jpeg";
+import project2 from "@/assets/images/project-2.jpg";
 import project3 from "@/assets/images/project-3.jpg";
 import Image from "next/image";
 import { SectionHeader } from "../components/SectionHeader";
@@ -104,21 +104,24 @@ const portfolioProjects = [
           "User authentication via Google, Facebook, or email/password using Clerk",
       },
     ],
-    link: "https://youtu.be/xbaHfSJIAQQ",
+    link: "https://nextjs15-camping-site.vercel.app/",
     githubFrontEnd: "https://github.com/ouyniya/nextjs15-camping-site",
     githubBackEnd: "https://github.com/ouyniya/nextjs15-camping-site",
     image: project2,
     stacks: [
       "NextJS",
-      "Supabase",
       "Prisma",
       "Leaflet",
       "Clerk",
       "Zod",
       "Zustand",
-      "SweetAlert2",
       "TailwindCSS",
       "Swiper",
+      "Framer Motion",
+      "Nodemailer",
+      "Prisma",
+      "PostgreSQL",
+      "Supabase",
     ],
     bullet: "⛺",
   },
