@@ -25,7 +25,7 @@ const portfolioProjects = [
       },
       { title: "Use JWT Authentication for user verification." },
     ],
-    link: "https://www.youtube.com/watch?v=1XQmvn3KVcE",
+    link: "https://smart-fund-select-frontend.vercel.app/",
     githubFrontEnd: "https://github.com/ouyniya/smart-fund-select-frontend",
     githubBackEnd: "https://github.com/ouyniya/smart-fund-select-backend",
     image: project1,
