@@ -1,6 +1,7 @@
 import project1 from "@/assets/images/project-1.jpg";
 import project2 from "@/assets/images/project-2.jpg";
 import project3 from "@/assets/images/project-3.jpg";
+import project4 from "@/assets/images/project-4.png";
 import Image from "next/image";
 import { SectionHeader } from "../components/SectionHeader";
 import { Card } from "../components/Card";
@@ -8,6 +9,7 @@ import { BrowserMockup } from "@/components/BrowserMockUp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const portfolioProjects = [
   {
@@ -125,6 +127,31 @@ const portfolioProjects = [
     ],
     bullet: "⛺",
   },
+  {
+    company: "Streamlit - Python",
+    year: "2025",
+    title: "Portfolio Attribution",
+    results: [
+      { title: "Upload or connect your portfolio and benchmark" },
+      { title: "Calculate Brinson Attribution (1986) effects" },
+      {
+        title:
+          "Interactive stacked or grouped bar charts using Plotly. Filter and analyze by sector.",
+      },
+    ],
+    link: "https://python-port-attribution-by-nysdev.streamlit.app/",
+    githubFrontEnd: "https://github.com/ouyniya/python-port-attribution",
+    githubBackEnd: "https://github.com/ouyniya/python-port-attribution",
+    image: project4,
+    stacks: [
+      "Python",
+      "Streamlit",
+      "Plotly",
+      "Pandas",
+      "NumPy",
+    ],
+    bullet: "⭐",
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -174,7 +201,9 @@ export const ProjectsSection = () => {
                 {/* mock up */}
                 <div className="relative md:min-h-[350px]">
                   <BrowserMockup className="-mb-4 md:-mb-0 mt-5 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none">
+                    <Link href={project.link}>
                     <Image src={project.image} alt={project.title} />
+                    </Link>
                   </BrowserMockup>
 
                   <div className="lg:absolute lg:top-[245px] w-full flex gap-5 mt-5">
